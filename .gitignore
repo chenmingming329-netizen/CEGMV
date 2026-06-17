@@ -1,0 +1,16 @@
+# Local runtime data
+snapshots/
+*.log
+__pycache__/
+*.pyc
+
+# Sensitive files
+.env
+*.env
+cookies.txt
+tokens.txt
+api_keys.txt
+
+# OS
+.DS_Store
+Thumbs.db
