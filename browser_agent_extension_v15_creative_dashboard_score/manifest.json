@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "TikTok GMV Max 广告管家 v1.5 素材Dashboard评分版",
+  "version": "1.5.0",
+  "description": "素材定时监控 + Dashboard面板 + S/A/B/C/D/E评分分级 + 复制重拍建议。",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8774/*",
+    "http://localhost:8774/*",
+    "https://ads.tiktok.com/*",
+    "https://seller.tiktokglobalshop.com/*",
+    "https://*.tiktok.com/*",
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' http://127.0.0.1:8774 http://localhost:8774"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "GMV Max 广告管家 v1.5",
+    "default_popup": "popup.html"
+  }
+}
