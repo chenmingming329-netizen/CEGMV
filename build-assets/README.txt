@@ -1,0 +1,1 @@
+V4.1 embedded-browser Windows build assets. Source archive and workflow are added in the next commit.
